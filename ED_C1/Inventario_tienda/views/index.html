@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario de Tienda</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Inventario de Tienda</h1>
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Nombre del producto">
+            <input type="number" id="price" placeholder="Precio del producto">
+            <button id="add-btn">Agregar Producto</button>
+        </div>
+        <div class="form-group">
+            <input type="text" id="searchQuery" placeholder="Buscar producto por nombre">
+            <button id="search-btn">Buscar Producto</button>
+        </div>
+        <div class="button-group">
+            <button id="min-btn">Producto con menor precio</button>
+            <button id="max-btn">Producto con mayor precio</button>
+            <button id="print-btn">Imprimir todos los productos</button>
+        </div>
+    </div>
+    <script type="module" src="../scripts/dependencies.js"></script>
+    <script type="module" src="../scripts/scripts.js"></script>
+</body>
+</html>
