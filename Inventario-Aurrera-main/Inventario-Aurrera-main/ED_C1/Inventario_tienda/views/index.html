@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario Tienda</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Inventario de Productos</h1>
+        <div class="form-group">
+            <label for="productName">Nombre del producto:</label>
+            <input type="text" id="productName" placeholder="Ingrese el nombre del producto">
+        </div>
+        <div class="form-group">
+            <label for="productPrice">Precio del producto:</label>
+            <input type="number" id="productPrice" placeholder="Ingrese el precio del producto">
+        </div>
+        <button id="agenda-btn">Agregar Producto</button>
+        <div class="form-group">
+            <label for="searchQuery">Buscar producto por nombre:</label>
+            <input type="text" id="searchQuery" placeholder="Ingrese el nombre del producto">
+        </div>
+        <button id="search-btn">Buscar Producto</button>
+        <button id="printAll-btn">Imprimir Todos los Productos</button>
+        <button id="minPrice-btn">Producto con Precio Mínimo</button>
+        <button id="maxPrice-btn">Producto con Precio Máximo</button>
+    </div>
+    <script src="../scripts/dependencies.js" type="module"></script>
+    <script src="../scripts/scripts.js" type="module"></script>
+</body>
+</html>
